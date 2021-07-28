@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="design/navigation.css">
     <title>Bose</title>
 </head>
+
 <body>
     <header>
         <div class="top-navigation">
@@ -24,43 +26,69 @@
                 </div>
                 <div class="navigation-right">
                     <a href="#" class="desktop">Featured</a>
-                    <button class="desktop">Products</button>
+                    <div class="dropdown-container">
+                        <button class="desktop">Products</button>
+                        <div class="dropdown">
+                            <div class="dropdown-content">
+                                <div class="dropdown-content-left">
+                                    <h3 class="dropdown-title">Speakers</h3>
+                                    <a href="" class="dropdown-link">Portable Bluetooth</a>
+                                    <a href="" class="dropdown-link">Home Theater</a>
+                                    <a href="" class="dropdown-link">Soundsbars</a>    
+                                    <a href="" class="dropdown-link">Smart Home</a>    
+                                </div>
+                                <div class="dropdown-content-center">
+                                    <h3 class="dropdown-title">Headphones</h3>
+                                    <a href="" class="dropdown-link">Noice cancelling</a>
+                                    <a href="" class="dropdown-link">Gaming Headsets</a>    
+                                    <a href="" class="dropdown-link">Aviator Headsets</a>    
+                                    <a href="" class="dropdown-link">Wireless</a>
+                                </div>
+                                <div class="dropdown-content-right">
+                                    <h3 class="dropdown-title">Earbuds</h3>
+                                    <a href="" class="dropdown-link">Quiet Comfort Earbuds</a>
+                                    <a href="" class="dropdown-link">Sport Earbuds</a>
+                                    <a href="" class="dropdown-link">Sport Open Earbuds</a>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <a href="#" class="desktop">Support</a>
                     <a href="#" class="desktop"><i class="bi bi-search"></i></a>
                     <a href="#" class="mobile" onclick="openNav()"><i class="bi bi-soundwave"></i></a>
                 </div>
             </div>
-        </div>
 
-        <!-- side navigation -->
-        <div class="sidenav-container">
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="bi bi-x"></i></a>
-                <img src="img/bose_logo.png" alt="Logo Bose">
-                <a href="#home">Home</a>
-                <a href="#featured">Featured</a>
-                <button class="accordion">Products</button>
-                <div class="panel">
-                    <ul>
-                        <li><a href="#">Surround Systems</a></li>
-                        <li><a href="#">Headphones</i></a></li>
-                        <li><a href="#">Earbuds</a></li>
-                    </ul>
+            <!-- side navigation -->
+            <div class="sidenav-container">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="bi bi-x"></i></a>
+                    <img src="img/bose_logo.png" alt="Logo Bose">
+                    <a href="#home">Home</a>
+                    <a href="#featured">Featured</a>
+                    <button class="accordion">Products</button>
+                    <div class="panel">
+                        <ul>
+                            <li><a href="#">Surround Systems</a></li>
+                            <li><a href="#">Headphones</i></a></li>
+                            <li><a href="#">Earbuds</a></li>
+                        </ul>
+                    </div>
+                    <a href="#support">Support</a>
+
+                    <div class="line"></div>
+
+                    <div class="search-container">
+                        <form action="">
+                            <input type="search" placeholder="Search" class="mobile-search">
+                            <button type="submit" class="search-btn"><i class="bi bi-search"></i></button>
+                        </form>
+                    </div>
                 </div>
-                <a href="#support">Support</a>
-
-                <div class="line"></div>
-
-                <div class="search-container">
-                    <form action="">
-                        <input type="search" placeholder="Search" class="mobile-search">
-                        <button type="submit" class="search-btn"><i class="bi bi-search"></i></button>
-                    </form>
-                </div>
-            </div>
     </header>
 
     <script src="javascript/script.js"></script>
 
 </body>
+
 </html>
